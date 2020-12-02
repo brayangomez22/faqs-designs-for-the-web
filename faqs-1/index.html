@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"  >
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="estilos.css">
+     
+</head>
+<body>
+   
+<section class="section-box" >
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-lg-5 offset-lg-2 contenido">
+                <div class="box-white">
+
+                    <div class="content mb-50">
+                        <h5 class="mb-15"><b>¿Por qué nos puedes elegir?</b></h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry when an unknown printer took a galley.</p>
+                    </div>
+
+                    <!-- accordion -->
+
+                    <div class="accordion">
+
+                        <div class="item ">
+                            <div class="title">
+                                <h6>Identificación del origen del problema</h6>
+                            </div>
+                            <div class="accordion-info ">
+                                <p>Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ubique maluisset vel te, his dico vituperata ut. in quodsi Ubique maluisset vel te, his dico vituperata ut in quodsi Ubique.</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="title">
+                                <h6>Protegiendo la integridad de la marca</h6>
+                            </div>
+                            <div class="accordion-info">
+                                <p>Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ubique maluisset vel te, his dico vituperata ut.vituperata ut in quodsi in quodsiUbique maluisset vel te, his dico vituperata ut in quodsiUbique. in quodsi vulputate.</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="title">
+                                <h6>Somos creativos y profesionales</h6>
+                            </div>
+                            <div class="accordion-info">
+                                <p>Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ubique maluisset vel te, his dico vituperata ut. in vituperata ut in quodsi maluisset vel te, his dico vituperata ut in quodsi Ubique. in quodsi vulputate.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <script>
+        jQuery(document).ready(function(){
+            $(".accordion").on("click",".title", function () {
+
+                $(this).next().slideDown();
+
+                $(".accordion-info").not($(this).next()).slideUp();
+
+            });
+
+            $(".accordion").on("click",".item", function () {
+
+                $(this).addClass("active").siblings().removeClass("active");
+
+            });   
+            
+        });
+    </script>
+</body>
+</html>
